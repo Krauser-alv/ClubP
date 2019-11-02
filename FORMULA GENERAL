@@ -1,0 +1,45 @@
+/**
+ * Write a description of class Formula here.
+ *
+ * @author Chávez Sánchez Kevin Edilberto
+ * @version (a version number or a date)
+ */
+public class Formula
+{
+    //Area para declaracion de variables
+   
+
+    /**
+     * Constructor de objetos de la clase Formula
+     */
+    public Formula()
+    {
+        
+    }
+
+    
+    public double obtenerX1(double a,double b,double c){
+    double aux;
+        double discriminante;
+        
+        discriminante = Math.pow(b,2)-(4*a*c);
+        if (discriminante == 0){
+            return (-b+(Math.sqrt(discriminante)))/(2*a);
+        }else if (discriminante > 0){
+            return (-b+(Math.sqrt(discriminante)))/(2*a);
+        }else return 0;
+    }
+    
+    public double obtenerX2(double a,double b,double c){
+    double aux;
+    double discriminante;
+                
+    discriminante = Math.pow(b, 2)-(4*a*c);
+    if (discriminante == 0){
+        return (-b+(Math.sqrt(discriminante)))/(2*a);
+    }else if (discriminante > 0){
+        return (-b-(Math.sqrt(discriminante)))/(2*a);
+    }else return 0;
+    }
+}
+  
